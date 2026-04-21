@@ -32,6 +32,9 @@ export function CsuiteGrid({ roles }: CsuiteGridProps) {
           </p>
           <p className="text-[13px] font-bold text-slate-900 leading-tight">{role.name}</p>
           <p className="text-[11px] text-slate-500 mt-0.5 leading-tight">{role.role}</p>
+          {role.salary && (
+            <p className="text-[11px] font-medium text-slate-400 mt-1">{role.salary}</p>
+          )}
           <div className="mt-2 flex gap-1 flex-wrap">
             <Badge status={role.status} />
             {role.promotion && (

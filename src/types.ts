@@ -9,6 +9,7 @@ export interface OrgNodeData {
   note?: string;
   status: HiringStatus;
   highlight?: boolean;
+  salary?: string;
   reports?: OrgNodeData[];
 }
 
@@ -19,6 +20,7 @@ export interface CSuiteRole {
   status: HiringStatus;
   color: CSuiteColor;
   promotion?: boolean;
+  salary?: string;
 }
 
 export interface Person {

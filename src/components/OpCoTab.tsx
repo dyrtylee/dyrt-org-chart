@@ -14,7 +14,7 @@ export function OpCoTab() {
       </NoteBox>
 
       <div className="flex items-center gap-4 bg-blue-50 border border-blue-200 rounded-lg px-4 py-3 mb-5">
-        <div className="text-4xl font-black text-blue-600 leading-none">~22</div>
+        <div className="text-4xl font-black text-blue-600 leading-none">~23</div>
         <div>
           <p className="text-[13px] font-bold text-slate-900">Employees per site</p>
           <p className="text-[12px] text-slate-500 mt-0.5">

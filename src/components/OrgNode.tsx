@@ -49,7 +49,12 @@ export function OrgNode({ node, depth = 0 }: OrgNodeProps) {
             <span className="block text-[11px] text-slate-400 mt-0.5 italic leading-snug">{node.note}</span>
           )}
         </div>
-        <Badge status={node.status} />
+        <div className="flex flex-col items-end gap-1 flex-shrink-0">
+          <Badge status={node.status} />
+          {node.salary && (
+            <span className="text-[10px] font-medium text-slate-400 whitespace-nowrap">{node.salary}</span>
+          )}
+        </div>
       </div>
 
       {hasReports && expanded && (

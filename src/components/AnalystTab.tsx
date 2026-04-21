@@ -1,5 +1,6 @@
 import { NoteBox } from './NoteBox'
 import { SectionLabel } from './SectionLabel'
+import { compSummary } from '../data'
 
 const rationale = [
   {
@@ -93,7 +94,7 @@ export function AnalystTab() {
       </div>
 
       <SectionLabel>Intercompany flow</SectionLabel>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
         {intercompany.map(({ name, provides, flow, flowColor }) => (
           <div key={name} className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
             <p className="text-[12px] font-bold text-slate-900 mb-1">{name}</p>
@@ -102,6 +103,37 @@ export function AnalystTab() {
             <p className={`text-[11px] font-semibold mt-1 ${flowColor}`}>{flow}</p>
           </div>
         ))}
+      </div>
+
+      <SectionLabel>Compensation summary — LA market · Series A benchmarks</SectionLabel>
+      <div className="mb-2 px-3 py-2 bg-slate-50 border border-slate-200 rounded-lg text-[11px] text-slate-500">
+        Salary bands reflect Los Angeles market rates for a funded Series A startup (April 2026). All figures are base salary; equity grants and commission OTE are additional. Bands widen for VP+ roles based on candidate seniority.
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+        {compSummary.map(({ entity, color, phases }) => {
+          const borderTop = color === 'green' ? 'border-t-green-500' : color === 'blue' ? 'border-t-blue-500' : 'border-t-amber-500'
+          const labelClr  = color === 'green' ? 'text-green-800'    : color === 'blue' ? 'text-blue-800'    : 'text-amber-800'
+          return (
+            <div key={entity} className={`bg-white border border-slate-200 border-t-[3px] rounded-lg p-3.5 ${borderTop}`}>
+              <p className={`text-[11px] font-bold uppercase tracking-widest mb-3 ${labelClr}`}>{entity}</p>
+              <div className="space-y-2.5">
+                {phases.map(({ phase, annualCost, note }) => (
+                  <div key={phase}>
+                    <div className="flex items-baseline justify-between gap-2">
+                      <span className="text-[12px] font-semibold text-slate-800">{phase}</span>
+                      <span className="text-[13px] font-black text-slate-900 whitespace-nowrap">{annualCost}</span>
+                    </div>
+                    <p className="text-[11px] text-slate-400 mt-0.5 leading-snug">{note}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+
+      <div className="px-3 py-2 bg-amber-50 border border-amber-200 rounded-lg text-[11px] text-amber-800">
+        <strong>Org gaps flagged for Series A investors:</strong> (1) Site 1 has no named Site Operations Manager — Daniel Del Real Jimenez (Floor Supervisor) is acting in the role. (2) No IT owner across 3 entities and 35+ employees. (3) No AR/AP specialist — intercompany billing has no dedicated owner. (4) No payroll coordination — multistate payroll compliance cannot wait for VP People. (5) No Sales Ops — CRM hygiene and commission tracking are unowned with 2+ reps active.
       </div>
     </div>
   )

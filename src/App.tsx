@@ -79,7 +79,7 @@ export default function App() {
           description="Standardized, independently incorporated physical operations. Phase 1: 3–5 additional LA/SoCal sites. Identical staffing, identical unit economics."
           owns="Processing · Logistics · Drivers · Floor ops · EHS per site"
           headcountNow="18 staff (site 1)"
-          headcountTarget="~22 per site"
+          headcountTarget="~23 per site"
           tag="$0.10/lb ops model · platform billback"
           color="blue"
         />
