@@ -7,9 +7,10 @@ export function MfgCoTab() {
   return (
     <div>
       <NoteBox variant="amber">
-        ManufacturingCo is a captive supplier managed directly by the HoldCo — a separate legal entity
-        to isolate all hardware CapEx and enable equipment financing without affecting the venture-backed
-        HoldCo balance sheet. A dedicated Manufacturing Manager (HoldCo employee) reports to the CEO.
+        ManufacturingCo is a captive supplier based in <strong>Las Cruces, NM</strong>, managed directly
+        by the HoldCo — a separate legal entity to isolate all hardware CapEx and enable equipment
+        financing without affecting the venture-backed HoldCo balance sheet. A dedicated Manufacturing
+        Manager (HoldCo employee) reports to the CEO.
       </NoteBox>
 
       <SectionLabel>R&amp;D ownership split</SectionLabel>
@@ -39,6 +40,7 @@ export function MfgCoTab() {
 
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 bg-slate-50 border border-slate-200 rounded-lg p-3 mt-4">
         {[
+          ['Location',       'Las Cruces, NM'],
           ['Structure',      'Captive supplier'],
           ['Managed by',     'HoldCo CEO'],
           ['Financing',      'Venture debt / equipment'],

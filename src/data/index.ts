@@ -187,7 +187,7 @@ export const holdcoOrg: OrgNodeData = {
     {
       name: 'Manufacturing Manager',
       title: 'Dedicated HoldCo employee · reports to CEO · manages ManufacturingCo as captive supplier — TBH Series A',
-      note: 'No separate entity president — managed directly from HoldCo CEO · see ManufacturingCo tab',
+      note: 'Las Cruces, NM · No separate entity president — managed directly from HoldCo CEO · see ManufacturingCo tab',
       status: 'phase1',
       salary: '$125K–$145K',
       highlight: true,
@@ -272,7 +272,7 @@ export const opcoSite1Staff: Person[] = [
 export const mfgcoOrg: OrgNodeData = {
   name: 'Manufacturing Manager',
   title: 'Dedicated HoldCo employee · reports to CEO · manages ManufacturingCo as captive supplier — TBH Series A',
-  note: 'No separate entity president — controlled directly from HoldCo CEO',
+  note: 'Facility: Las Cruces, NM · No separate entity president — controlled directly from HoldCo CEO',
   status: 'phase1',
   salary: '$125K–$145K',
   highlight: true,
@@ -314,11 +314,11 @@ export const compSummary = [
     ],
   },
   {
-    entity: 'ManufacturingCo (Phase 1 skeleton)',
+    entity: 'ManufacturingCo — Las Cruces, NM',
     color: 'amber',
     phases: [
-      { phase: 'Phase 1 (6 roles)',    annualCost: '~$560K',  note: 'Mfg Manager, 3 Engineers, Procurement Coord, Mfg Supervisor' },
-      { phase: 'Phase 2 (+50 team)',   annualCost: '+$2.1M',  note: 'Manufacturing Team at $38K–$46K average' },
+      { phase: 'Phase 1 (6 roles)',    annualCost: '~$560K',  note: 'Mfg Manager, 3 Engineers, Procurement Coord, Mfg Supervisor · NM labor market advantage vs. LA' },
+      { phase: 'Phase 2 (+50 team)',   annualCost: '+$2.1M',  note: 'Manufacturing Team at $38K–$46K average · Las Cruces wages approx. 15–20% below LA equivalents' },
     ],
   },
 ]

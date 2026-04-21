@@ -84,9 +84,9 @@ export default function App() {
           color="blue"
         />
         <EntityCard
-          eyebrow="ManufacturingCo · Captive supplier"
+          eyebrow="ManufacturingCo · Las Cruces, NM"
           name="Dyrt Manufacturing Co."
-          description="Separate legal entity owning all hardware CapEx. Isolates venture debt from HoldCo. Managed by HoldCo. Hardware R&D housed here."
+          description="Separate legal entity based in Las Cruces, NM owning all hardware CapEx. Isolates venture debt from HoldCo. Managed by HoldCo. Hardware R&D housed here."
           owns="Hardware R&D · Bin manufacturing · NPI · QC · Procurement"
           headcountNow="Not yet formed"
           headcountTarget="56 roles"
